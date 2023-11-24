@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Playfair:ital,opsz,wght@0,5..1200,500;0,5..1200,600;0,5..1200,700;1,5..1200,400&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+:root{
+    /* ### Primary */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+
+    /* ### Neutral */
+    --Dark-gray: hsl(0, 0%, 59%);
+    --White: #fff;
+
+    /*Font weights*/
+    --normal: 400;
+    --bold: 700;
+
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: var(--normal);
+}
+html{
+    font-size: 10px;
+    background: var(--Dark-cyan);
+    color: var(--Very-dark-desaturated-blue);
+}
+body{
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: calc(50vw - 101rem) calc(50vh - 86rem), calc(50vw - 15rem) 50vh;
+    background-repeat: no-repeat;
+    background-size: auto, 140rem;
+}
+
+/*Container*/
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Card*/
+.card{
+    height: 37.4rem;
+    width: 35rem;
+    background: var(--White);
+    border-radius: 1.5rem;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+}
+.bg-pattern-card{
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+/*Fonts*/
+.name{
+    font-size: 1.8rem;
+    font-weight: var(--bold);
+}
+.age{
+    margin-left: .3rem;
+    font-size: 1.8rem;
+    color: var(--Dark-grayish-blue);
+}
+.location{
+    font-size: 1.4rem;
+    color: var(--Dark-gray);
+    margin-top: .8rem;
+}
+
+/*Main Section*/
+.main-section{
+    width: 100%;
+    height: 22.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 7rem 0 0 0;
+}
+.avatar{
+    border-radius: 50%;
+    position: absolute;
+    top: -5.1rem;
+    left: 50%;
+    translate: -50% 0;
+    outline: .5rem solid var(--White);
+}
+.divider-line{
+    margin-top: 2.2rem;
+    width: 100%;
+    opacity: 0.3;
+}
+
+
+/*Stats section*/
+.stats{
+    margin-top: 2.4rem;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.stat{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3rem;
+}
+.stat-no{
+    font-size: 1.8rem;
+    font-weight: var(--bold);
+}
+.stat-name{
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: .1rem;
+}
